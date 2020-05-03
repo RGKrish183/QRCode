@@ -1,0 +1,30 @@
+{
+  "name": "go-qrcode",
+  "version": "1.0.2",
+  "description": "QR Code generator for react, angular, vue with node server template engine. ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGKrish183/QRCode.git"
+  },
+  "keywords": [
+    "qrcode",
+    "react",
+    "angular",
+    "vuejs",
+    "template",
+    "engine",
+    "npm",
+    "logo",
+    "and",
+    "background",
+    "image",
+    "styles."
+  ],
+  "author": "GopalaKrishnan.R <rgkrish183@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RGKrish183/QRCode/issues"
+  },
+  "homepage": "https://github.com/RGKrish183/QRCode#readme"
+}

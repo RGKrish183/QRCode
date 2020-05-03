@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple QRCODE with logo</title>
+    <style>
+      #holder {
+        display: flex;
+      }
+
+      #qrcode > img {
+        padding: 15px;
+        background: linear-gradient(to right, #00b9f5 2px, transparent 2px) 0 0,
+          linear-gradient(to right, #00b9f5 2px, transparent 2px) 0 100%,
+          linear-gradient(to left, #00b9f5 2px, transparent 2px) 100% 0,
+          linear-gradient(to left, #00b9f5 2px, transparent 2px) 100% 100%,
+          linear-gradient(to bottom, #00b9f5 2px, transparent 2px) 0 0,
+          linear-gradient(to bottom, #00b9f5 2px, transparent 2px) 100% 0,
+          linear-gradient(to top, #00b9f5 2px, transparent 2px) 0 100%,
+          linear-gradient(to top, #00b9f5 2px, transparent 2px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 46px 41px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="holder">
+      <div id="qrcode"></div>
+    </section>
+
+    <script src="./index.js"></script>
+    <script>
+      const obj = {
+        text: "https://github.com/RGKrish183/QRCode",
+        width: 180,
+        height: 180,
+        colorDark: "#473C8B",
+        colorLight: "#FFFACD",
+        // logo: "./assets/author.jpg", // LOGO
+        // logoWidth: "80",
+        // logoHeight: "80",
+        // logoBackgroundColor: "#00b9f5",
+        correctLevel: QRCode.CorrectLevel.H, // L, M, Q, H
+        version: 5,
+      };
+
+      var container = document.getElementById("qrcode");
+      var t = new QRCode(container, obj);
+    </script>
+  </body>
+</html>
