@@ -2,9 +2,7 @@
 
 Cross browser QRCode generator for pure javascript. Supported setting for Logo, Background images, etc.
 
-![Basic Preview](assets/qr-code-basic.png)
-
-![Logo Preview](assets/qr-code-with-author-logo.png)
+![Preview](assets/qr-code-common.png)
 
 #### REACTJS QR Code Examples,
 
