@@ -1,6 +1,6 @@
 {
   "name": "go-qrcode",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "QR Code generator for react, angular, vue with node server template engine. ",
   "main": "index.js",
   "repository": {

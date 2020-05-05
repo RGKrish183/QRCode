@@ -80,3 +80,47 @@ Cross browser QRCode generator for pure javascript. Supported setting for Logo, 
     };
     </script>
 ```
+
+#### ANGULAR QR Code Examples,
+
+[Live Demo](https://codesandbox.io/embed/go-qrcode-angular-ji47y?fontsize=14&hidenavigation=1&theme=dark "Angular QR Code")
+
+```
+    // .html
+    <div id="goqrcode"></div>
+
+    // .ts
+    import { Component } from "@angular/core";
+    import * as GoQrcode from "go-qrcode";
+
+    @Component({
+        selector: "app-root",
+        templateUrl: "./app.component.html",
+        styleUrls: ["./app.component.css"]
+    })
+    export class AppComponent {
+        title = "CodeSandbox";
+
+        ngAfterContentInit() {
+            let options = {
+                text: "https://github.com/RGKrish183/QRCode",
+                width: 180,
+                height: 180,
+                colorDark: "#473C8B",
+                colorLight: "#FFFACD",
+                logo: "../assets/author-logo.jpg",
+                logoWidth: "80",
+                logoHeight: "80",
+                logoBackgroundColor: "#00b9f5",
+                correctLevel: GoQrcode.CorrectLevel.H, // L, M, Q, H
+                version: 5
+            };
+
+            let domel = document.getElementById("goqrcode");
+
+            // Create new QRCode Object
+            new GoQrcode(domel, options);
+        }
+    }
+
+```
